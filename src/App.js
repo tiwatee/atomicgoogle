@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+// import sidehustlelogo from './images/logo.jpg';
+import Topbar from './Component/Topbar';
+import Footer from './Component/Footer';
+import Language from './Component/Language';
+import sidehustlelogo from './images/sidehustle.png';
+import { useState } from 'react';
 
 function App() {
+  const [search, setSearch]= useState("");
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="wrapper">
+        <Topbar />
+
+        <div className="logoName">
+          {search.length === 0 ? <img src={sidehustlelogo} alt="sideHustle logo"/> : search}
+        </div>
+
+        <div className="inputArea">
+          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} />
+        </div>
+
+        <Language />
+
+        <Footer />
+      </div>
     </div>
   );
 }
