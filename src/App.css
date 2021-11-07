@@ -64,10 +64,12 @@ span:hover{
     position: relative;
 }
 #search{
-    left: 50px
+    font-size: 25px;
+    left: 40px
 }
 #mic{
-    right: 50px;
+    font-size: 25px;
+    right: 40px;
 }
 .inputArea{
     text-align: center;
@@ -80,6 +82,7 @@ input{
     border-radius: 30px;
     border: 1px solid gray;
     outline: none;
+    padding-left: 50px !important;
     /* position: absolute; */
 }
 .buttons{
@@ -148,5 +151,77 @@ button:hover{
 .right a{
     margin-right: 1em;
     color: gray;
+}
+
+
+
+/* for mobile screens */
+@media only screen and (max-width: 750px) {
+    
+    .topBar{
+        font-size: 10px;
+        height: 40px;
+        text-align: right;
+        margin: 20px;
+    }
+
+    .logoName img{
+        margin: auto;
+        width: 20vw;
+        height: 40px;
+    }
+
+    .inputArea{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    input{
+        width: 60vw;
+        height: 4vh;
+        padding-left: 25px !important;
+    }
+
+    .buttons{
+        text-align: center;
+        margin: 15px auto;
+    }
+
+    button{
+        font-size: x-small;
+        padding: 7px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 8px;
+        
+    }
+
+    .language{
+        font-size: 0.5em;
+        
+    }
+
+    .language a{
+        padding: 0.8em;
+        margin-top: 0.8em;
+    }
+
+    .footer-wrapper{
+        font-size: 0.5em;
+    }
+    
+
+    .hide{
+        display: none;
+    }
+
+    #search{
+        font-size: 15px;
+        left: 20px;
+    }
+    #mic{
+        font-size: 15px;
+        right: 20px;
+    }
 }
 
