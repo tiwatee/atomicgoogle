@@ -57,6 +57,18 @@ span:hover{
     width: 40vw;
     height: 100px;
 }
+.icons{
+    font-size: 30px;
+    color: greenyellow;    
+    top: 5px;
+    position: relative;
+}
+#search{
+    left: 50px
+}
+#mic{
+    right: 50px;
+}
 .inputArea{
     text-align: center;
     margin-top: 50px;
@@ -68,6 +80,7 @@ input{
     border-radius: 30px;
     border: 1px solid gray;
     outline: none;
+    /* position: absolute; */
 }
 .buttons{
     text-align: center;
@@ -136,3 +149,4 @@ button:hover{
     margin-right: 1em;
     color: gray;
 }
+
